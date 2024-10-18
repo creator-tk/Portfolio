@@ -24,8 +24,8 @@ lightMode.onclick = () => {
   lightHider.classList.add('hidden');
   darkHider.classList.remove('hidden');
   lang.src = 'Images/code-icon.png';
-  edu.src = '/Images/edu-icon.png';
-  proj.src = '/Images/project-icon.png';
+  edu.src = 'Images/edu-icon.png';
+  proj.src = 'Images/project-icon.png';
 };
 
 darkMode.onclick = () => {
