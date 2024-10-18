@@ -37,9 +37,9 @@ darkMode.onclick = () => {
   navBar.style.backgroundColor = '';
   darkHider.classList.add('hidden');
   lightHider.classList.remove('hidden');
-  lang.src = 'Images/code-icon-dark.png';
-  edu.src = 'Images/edu-icon-dark.png';
-  proj.src = 'Images/project-icon-dark.png';
+  lang.src = "Images/code-icon-dark.png";
+  edu.src = "Images/edu-icon-dark.png";
+  proj.src = "Images/project-icon-dark.png";
 
 };
 
@@ -61,8 +61,8 @@ for (let i = 0; i < Hider.length; i++) {
       darkHider.src = 'Images/close-black.png'
     } else {
       hidedContent.classList.add('hidden'); // Hide content 
-      lightHider.src = 'Images/menu-white.png'
-      darkHider.src = 'Images/menu-black.png'
+      lightHider.src = "Images/menu-white.png"
+      darkHider.src = "Images/menu-black.png"
     }
   };
 }
