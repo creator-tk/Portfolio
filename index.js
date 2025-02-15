@@ -67,7 +67,7 @@ for (let i = 0; i < Hider.length; i++) {
   };
 }
 
-console.log(localStorage.theme)
+
 
 
 
