@@ -1,209 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WebWizards</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="tailwind.config.js"></script>
-  <script src="index.js" defer></script>
-  <link rel="stylesheet" href="navBar.css">
-  <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio of TharunKumar - Full Stack Developer">
+    <title>TharunKumar | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-black text-white relative">
-
-  <nav class="flex justify-between items-center px-10 bg-slate-800  sticky top-0 right-0 left-0 mt-0 w-screen py-2 gap-5 sm:px-10 z-50 lg:px-20" id="nav-bar">
-    <div>
-      <h1 class="logo text-[20px] lg:text-[30px] cursor-pointer mb-0"><a href="#">WebWizards</a></h1>
-      <p class="text-[0.5vw] mt-0">Turning Web Dreams into Digital Realities</p>
-    </div>
+<body class="bg-gray-100 text-gray-900">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-10 top-0">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">TharunKumar</h1>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#about" class="hover:text-blue-500">About</a></li>
+                <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+                <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
     
-    <ul class="list-none hidden md:flex gap-20 border p-3 rounded-3xl items-center lg:gap-10 sm:text-sm sm:gap-6">
-      <li class="cursor-pointer"><a href="#About">About Me</a></li>
-      <li class="cursor-pointer"><a href="#Resume">Resume</a></li>
-      <li class="cursor-pointer"><a href="#Services">Services</a></li>
-      <li class="cursor-pointer"><a href="#Contact">Contact</a></li>
-    </ul>
-
-    <div class=" flex gap-5 sm:mr-14 ">
-      <div class="flex p-2  themeContainer bg-gray-700 lg:w-[100px] sm:w-[70px] w-14 theme"  >
-        <img id="lightMode" src="Images/sun_icon.png" alt="" class="max-w-4 lg:max-w-6 lightMode cursor-pointer" >
-        <img id="darkMode" src="Images/moon_icon.png" alt="" class="max-w-4 lg:max-w-6 darkMode cursor-pointer">
-      </div>
-      <div>
-        <img src="Images/menu-white.png" class="w-6 h-6 mt-1 md:hidden sm:text-[90%] Hider" alt="" id="whiteHider">
-        <img src="Images/menu-black.png" class="w-6 h-6 mt-1 md:hidden Hider " alt="" id="blackHider">
-      </div>
-    </div>
-
-
-    <!---Mobile Menu-->
-
-    <ul class="text-black list-none w-1/4 h-30 bg-white absolute right-0 top-12 rounded-lg p-2 sm:hidden" id="hidedContent">
-        <li class="cursor-pointer"><a href="#About">About Me</a></li>
-        <li class="cursor-pointer"><a href="#Resume">Resume</a></li>
-        <li class="cursor-pointer"><a href="#Skills">Skills</a></li>
-        <li class="cursor-pointer"><a href="#Contact">Contact</a></li>
-    </ul>
-  </nav>
-
-
-  <!--Main Content-->
-
-  <div class="flex flex-col justify-center w-screen items-center h-screen  lg:gap-4 mt-0 sm:mt-20 lg:mt-0 main">
-
-    <div class='w-[20vh] h-[20vh] sm:w-[23vw] sm:h-[23vw] rounded-full mb-4 profile flex items-center justify-center'>
-      <img class="rounded-full w-[100%]" src="Images/profile_3.png" alt="">
-    </div>
-
-    <h1 class="lg:text-2xl mt-[15px]">Hi! I'm Tharun Kumar</h1>
-    <p class="text-3xl lg:text-[14vh] my-3 text-center"> Full Stack web Developer</p>
-
-      <div class="flex lg:gap-4 gap-2 items-center flex-col sm:flex-row mt-3 lg:mt-6">
-
-        <a href="#Contact" class="lg:text-lg flex gap-2 items-center bg-gradient-to-r from-purple-500 via-slate-500 to-orange-500 p-2 rounded-full px-6 shadow-inherit lg:w-[180px] cursor-pointer">Contact Me <img class="w-4 h-3  " src="Images/right-arrow-bold-dark.png" alt=""></a> 
-
-        <a href="Images/UpdatedResume.pdf" download class="lg:text-xl flex gap-2 items-center bg-gray-400 border p-2 px-9 lg:pl-10 lg:w-[180px] rounded-full text-center cursor-pointer">Resume<img class="w-4 h-3  " src="Images/download-icon.png" alt=""></a>
-
-      </div>
-    </div>
-
-    <!--About-->
-
-    <div id="About" class="w-screen px-[10%] py-10 sm:mt-16 lg:mt-0 ">
-      <h4 class="text-center mb-2 text-lg">Introduction</h4>
-      <h2 class="text-center mb-2 text-3xl lg:text-5xl">About Me</h2>
-
-      <div class="flex w-full flex-col lg:flex-row items-center gap-10 sm:gap-15 lg:gap-20 sm:my-10 lg:my-20">
-        <div class="max-w-max mx-auto relative shadow-[2px_2px_15px_#666565] rounded-3xl">
-          <img src="Images/profile_2.png" class="rounded-3xl max-w-none w-64 lg:w-80" alt="">
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col justify-center items-center text-center p-6 bg-blue-500 text-white">
+        <h2 class="text-4xl font-bold">Hi, I'm TharunKumar</h2>
+        <p class="text-lg mt-2">A Passionate Full Stack Developer</p>
+        <a href="#projects" class="mt-4 px-6 py-2 bg-white text-blue-500 rounded-lg shadow-md hover:bg-gray-200">View My Work</a>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-16 px-6 container mx-auto">
+        <h2 class="text-3xl font-bold text-center">About Me</h2>
+        <p class="text-center mt-4 text-lg max-w-2xl mx-auto">I am a full-stack developer with experience in building web applications using modern technologies like React, Next.js, Node.js, and MongoDB.</p>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-6 bg-gray-200">
+        <h2 class="text-3xl font-bold text-center">Projects</h2>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 container mx-auto">
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold">Project 1</h3>
+                <p class="text-gray-600">A brief description of your project.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold">Project 2</h3>
+                <p class="text-gray-600">A brief description of your project.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold">Project 3</h3>
+                <p class="text-gray-600">A brief description of your project.</p>
+            </div>
         </div>
-        <div>
-          <p class="mb-10 max-w-2xl">I am an experience Frontend Developer with over a decade of professional expertise in the field. Thoughout  my career, I have had to privileage of collaborating with pretigious organizations, contributing to their success and growth.</p>
-
-          <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
-            <li class="border p-3 rounded-3xl hover:shadow-[2px_2px_15px_#666565] cursor-pointer transition-shadow" id="lang">
-              <img class="w-6 mb-3 about" src="Images/code-icon.png" alt="" >
-              <h3>Languages</h3>
-              <p>HTML, CSS, JavaScript, ReactJs NextJs, NodeJs</p>
-            </li>
-
-            <li class="border p-3 rounded-3xl hover:shadow-[2px_2px_15px_#666565] cursor-pointer transition-shadow">
-              <img class="w-6 mb-3" src="Images/edu-icon-dark.png" id="edu" alt="" >
-              <h3>Education</h3>
-              <p>B.Tech in Computer Science</p>
-            </li>
-
-            <li class="border p-3 rounded-3xl hover:shadow-[2px_2px_15px_#666565] cursor-pointer transition-shadow">
-              <img class="w-6 mb-3 about" src="Images/project-icon-dark.png" id="proj" alt="" >
-              <h3>Projects</h3>
-              <p>Built More than 5 projects</p>
-            </li>
-          </ul>
-
-          <h4 class="my-6 ">Tools i use</h4>
-          <ul class="flex gap-3 items-center ">
-
-            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:shadow-[2px_2px_15px_#666565]">
-              <img src="Images/vscode.png" alt="" class="w-5 sm:w-7">
-            </li>
-
-            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer 
-            hover:shadow-[2px_2px_15px_#666565]">
-              <img src="Images/git.png" alt="" class="w-5 sm:w-7">
-            </li>
-
-            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer 
-            hover:shadow-[2px_2px_15px_#666565]">
-              <img src="Images/mongodb.png" alt="" class="w-5 sm:w-7">
-            </li>
-
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!--Resume-->
-    <div id="Resume" class="p-8 lg:px-[16vh] lg:mt-20 mt-16">
-      <h1 class="text-4xl m-6 ml-0 text-center">My Resume</h1>
-      <div  class="grid items-center px-[40px] gap-8 grid-flow-row sm:grid-flow-col align-middle ">
-        <div class="hidden md:block">
-          <p class="lg:leading-8 sm:leading-6 leading-6 ">This resume highlights my journey as a B.Tech student in  Computer Science currently pursuing my degree from JNTU.  Although I’m still in the early stages of my career, I have developed a strong foundation in Full Stack web Development <b>HTML, CSS, JavaScript, React JS, Node JS</b>. Through my academic projects and coursework, I’ve gained hands-on experience in Frontend Technologies, and I’m eager to apply these skills in real-world settings</p>
-        </div>
-        <div class="relative ">
-          <div class="border-red-400 w-[50px]  sm:w-20 sm:h-20 rounded-full  z-1 shadow-[2px_2px_15px_#666565] bg-opacity-60 top-[-12px] left-[25px] cursor-pointer absolute  sm:top-[-10px] sm:left-[-20px] circularText">
-            <img  src="Images/circular-text.png" alt="">
-          </div>
-          <img class="border-x-white rounded-xl w-[60vw] lg:w-[18vw] shadow-[2px_2px_15px_#666565] ml-10 sm:ml-0" src="Images/UpdatedResume.png" alt="">
-        </div>
-      </div>
-    </div>
-
-
-    <!--Services-->
-    <div id="Services" class="flex items-center justify-center mt-20 flex-col p-12">
-      <h1 class="text-5xl">My Services</h1>
-      <ul class="my-2 flex flex-col sm:flex-row justify-center mt-8 flex-wrap w-[80%]  gap-5">
-        <li class="border p-3 rounded-xl sm:w-[220px] lg:w-[18vw] shadow-[3px_3px_15px_#666990]">
-          <img src="Images/web-icon.png" class="w-8 mb-2"  alt="">
-          <h3 >Web design</h3>
-          <p class="text-sm text-gray-400 mt-2">Web development is the process of building, programming...</p>
-        </li>
-
-        <li class="border p-3 rounded-xl sm:w-[220px] lg:w-[18vw] shadow-[3px_3px_15px_#666990]">
-          <img src="Images/mobile-icon.png" class="w-8 mb-2"  alt="">
-          <h3 >Mobile Applications</h3>
-          <p class="text-sm text-gray-400 mt-2">Creating mobile applications using latest technologies..</p>
-        </li>
-      </ul>
-    </div>
-
-
-    <!---Contact-->
-    <div id="Contact" class="w-full px-[12%] py-10 scroll-mt-20  mb-[4%] flex flex-col justify-center items-center gap-5 lg:mt-20 sm:mt-16">
-        <h1 class="text-2xl">Contact Me</h1>
-        <p class="text-[30px] sm:text-5xl font-thin text-center">Get in touch</p>
-        <p class="text-center text-[80%] sm:text-[100%]">I'd love to hear from you! If you have any questions, comments or feedback, please use the form below</p>
-
-        <form class="max-w-2xl mx-auto" action="https://api.web3forms.com/submit" method="POST">
-
-          <input type="hidden" name="access_key" 
-          value="33cd1e1a-d8e1-46be-9426-6a659476faff">
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
-            <input type="text" placeholder="Enter your Name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md shadow-[2px_2px_15px_#666565] w-[70vw] lg:w-60 text-black" required name="name">
-            
-            <input type="email" placeholder="Enter your email" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md shadow-[2px_2px_15px_#666565] text-black" required name="email">
-          </div>
-
-          <textarea rows="6" placeholder="Enter you message" class="w-full outline-none shadow-[2px_2px_15px_#666565] rounded-lg p-6 text-black" required name="message"></textarea>
-
-          <button class="flex gap-2 items-center w-28 border p-2 pl-3 rounded-lg bg-gray-450 mt-6 shadow-[2px_2px_15px_#666565] text-xl" type="submit">Submit
-            <img class="w-5" src="Images/right-arrow-bold-dark.png" alt="">
-          </button>
-        </form>
-    </div>
-
-    <!--Footer-->
-    <div class="lg:mt-20 flex justify-center flex-col items-center gap-8 lg:mb-8">
-      <div class="text-center">
-        <h1 class="logo text-[20px] lg:text-[30px] cursor-pointer mb-3"><a href="#">WebWizards</a></h1>
-        <div class="flex items-center gap-2 mb-3 justify-center">
-          <img class="w-6 h-4" src="Images/mail_icon.png" alt="">
-          <p>tharunkumarboddeti@gmail.com</p>
-        </div>
-        <hr class="w-screen">
-
-        <div class="text-center sm:flex justify-between mx-[10%] lg:my-12 py-6">
-          <p>© 2024 TharunKumar Boddeti. All rights reserved</p>
-          <ul class="flex gap-3 justify-center mt-4 sm:mt-0">
-            <li><a href="https://github.com/creater-tk" target="_blank">GitHub</a></li>
-            <li><a href="">LinkedIn</a></li>
-            <li><a href="">Instagram</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 container mx-auto text-center">
+        <h2 class="text-3xl font-bold">Contact Me</h2>
+        <p class="text-lg mt-4">Feel free to reach out for collaborations or inquiries.</p>
+        <a href="mailto:tharunkumarboddeti@gmail.com" class="mt-4 inline-block px-6 py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600">Email Me</a>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>&copy; 2025 TharunKumar Boddeti. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
